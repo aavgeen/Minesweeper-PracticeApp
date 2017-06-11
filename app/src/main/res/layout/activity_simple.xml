@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_simple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.aavgeensingh.minesweeper.SimpleActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#CDC9A5"
+        android:id="@+id/grid"
+        android:gravity="fill_vertical"
+        android:layout_below="@+id/upperBar"
+        >
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:id="@+id/upperBar"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/grid"
+        android:layout_alignEnd="@+id/grid">
+
+        <Button
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:text="🙂"
+            android:background="#ffff40"
+            android:textColor="#000000"
+            android:id="@+id/newgame"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="22dp"
+            android:id="@+id/pointText"
+            android:background="#000000"
+            android:textColor="#ff0000"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>
